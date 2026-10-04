@@ -1,4 +1,4 @@
-# ArXiv RAG
+# Multi-Agent RAG for arXiv Papers: Researcher and Critic Evaluation
 
 50 papers were downloaded from arxiv. 48 questions were written by hand from passage samples, then answered by qwen2.5:7b under four conditions: no context, the correct passage given directly, naive RAG, and a multi-agent loop where a critic can reject retrieved passages and send the researcher back to search again (max 2 rewrites). A second model (llama3.1:8b) graded each answer as correct or incorrect.
 
